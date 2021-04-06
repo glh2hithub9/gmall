@@ -1,0 +1,16 @@
+server:
+  port: 8086
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 0638d10a-4d9b-44d5-8d98-21f60c3b7cd6
+  elasticsearch:
+    jest:
+      uris: http://127.0.0.1:9200
+  rabbitmq:
+    host: 127.0.0.1
+    virtual-host: /fengge
+    username: fengge
+    password: fengge

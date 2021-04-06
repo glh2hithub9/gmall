@@ -1,0 +1,17 @@
+
+server:
+  port: 8089
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+auth:
+  jwt:
+    publicKeyPath: D:\\develop\\git_code\\temp\\rsa.pub
+    privateKeyPath: D:\\develop\\git_code\\temp\\rsa.pri
+    expire: 180
+    cookieName: GMALL_TOKEN
+    secret: 2340p0LJI@#@$OLldsjkl24esd
+
+
