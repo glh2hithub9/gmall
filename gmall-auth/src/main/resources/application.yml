@@ -1,4 +1,3 @@
-
 server:
   port: 8089
 spring:
@@ -6,6 +5,18 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+  security:
+    basic:
+      enabled: true
+      path: /swagger-ui.html
+    user:
+      name: admin
+      password: admin
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/guli_pms?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
 auth:
   jwt:
     publicKeyPath: D:\\develop\\git_code\\temp\\rsa.pub
